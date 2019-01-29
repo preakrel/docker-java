@@ -1,9 +1,4 @@
-
-
-FROM openjdk:11-ea-28-jre
-
-# 维护者信息
-MAINTAINER 1396981439@qq.com
+FROM openjdk:8-jre
 
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
@@ -164,4 +159,3 @@ RUN set -e \
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
-
