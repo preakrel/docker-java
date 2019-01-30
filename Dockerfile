@@ -16,7 +16,7 @@ COPY conf/server.xml /usr/local/apache-tomcat/conf/server.xml
  
 #设置环境变量
 ENV JAVA_HOME /usr/local/jdk
-ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+ENV CLASSPATH .:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ENV CATALINA_HOME /usr/local/apache-tomcat
 ENV PATH $PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$CATALINA_HOME/lib:$CATALINA_HOME/bin
  
